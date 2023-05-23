@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass{scrartcl}
 
 \usepackage{times}
 \usepackage{geometry}
@@ -12,18 +12,33 @@
 \geometry{letterpaper,margin=1in}
 \newcolumntype{P}[1]{>{\endgraf\vspace*{-\baselineskip}}p{#1}}
 
+%Version Number
+\def\version{1.2}
+
 \newlist{todolist}{itemize}{2}
 \setlist[todolist]{label=$\square$}
 
+\title{California State University, Chico\\Computer Science Department\\RTP Standards}
+\subtitle{Version \version}
+
 \begin{document}
 \fancyhead{}\fancyfoot{}
+\begin{titlepage}
+\clearpage\maketitle
+\thispagestyle{empty}
+
+\end{titlepage}
+
+\tableofcontents
+
+\pagebreak
 
 \fancypagestyle{firststyle}
 {
    \fancyfoot[L]{\fontsize{8}{12} \selectfont Standards must be compliant with the CBA and the FPPP.  Conflicts between these standards and the CBA or the FPPP will be resolved pursuant to the CBA and then FPPP.}
 }
 \fancyhead[L]{\fontsize{8}{12} \selectfont CSU, Chico Computer Science Department RTP Standards, Page \thepage\ of \pageref{LastPage}}
-\fancyhead[R]{\fontsize{8}{12} \selectfont Revised: \today\\ v1.1}
+\fancyhead[R]{\fontsize{8}{12} \selectfont Revised: \today\\ v\version}
 
 \setlength{\parindent}{0pt}
 
