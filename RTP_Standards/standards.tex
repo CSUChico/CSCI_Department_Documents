@@ -7,6 +7,7 @@
 \usepackage{hyperref}
 \usepackage{longtable}
 \usepackage{array,booktabs,enumitem}% http://ctan.org/pkg/{array,booktabs,enumitem}
+\usepackage{datetime}
 \pagestyle{fancy} 
 \geometry{letterpaper,margin=1in}
 \newcolumntype{P}[1]{>{\endgraf\vspace*{-\baselineskip}}p{#1}}
@@ -19,9 +20,10 @@
 
 \fancypagestyle{firststyle}
 {
-   \fancyfoot[L]{Standards must be compliant with the CBA and the FPPP.  Conflicts between these standards and the CBA or the FPPP will be resolved pursuant to the CBA and then FPPP.}
+   \fancyfoot[L]{\fontsize{8}{12} \selectfont Standards must be compliant with the CBA and the FPPP.  Conflicts between these standards and the CBA or the FPPP will be resolved pursuant to the CBA and then FPPP.}
 }
-\fancyhead[L]{CSU, Chico Computer Science Department RTP Standards, Page \thepage\ of \pageref{LastPage}}
+\fancyhead[L]{\fontsize{8}{12} \selectfont CSU, Chico Computer Science Department RTP Standards, Page \thepage\ of \pageref{LastPage}}
+\fancyhead[R]{\fontsize{8}{12} \selectfont Revised: \today}
 
 \setlength{\parindent}{0pt}
 
